@@ -191,26 +191,18 @@ def patient_lab_data(request):
     return JsonResponse(data, status=200)
 
 
-def predict_model(request):
-    pass
-    """
-    從csv抓病人已整理完的資料
-    再丟到模型做預測
-    """
-    import pickle
+# def predict_model(request):
+#     pass
+#     """
+#     從csv抓病人已整理完的資料
+#     再丟到模型做預測
+#     """
+#     import pickle
 
-    data = []
-    # 讀取Model
-    with open('./model/xgboost-iris.pickle', 'rb') as f:
-        xgboostModel = pickle.load(f)
-        pred = xgboostModel.predict(data)
-        print(pred)
+#     data = []
+#     # 讀取Model
+#     with open('./model/xgboost-iris.pickle', 'rb') as f:
+#         xgboostModel = pickle.load(f)
+#         pred = xgboostModel.predict(data)
+#         print(pred)
 
-
-"""
-1. 圖表 折線圖
-2. 把預測模型的程式碼搬過來
-3. 把 flask 那邊讀 csv 的程式碼搬過來
-4. 看 lime 程式碼
-5. 欄位翻譯成中文
-"""
