@@ -1,3 +1,7 @@
+'''
+不建議用這種方式匯入所有eicu的資料
+資料量太多
+'''
 import os
 import django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "vae_patient_web.settings")

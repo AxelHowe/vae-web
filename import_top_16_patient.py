@@ -1,4 +1,6 @@
-
+'''
+只匯入16位名人的資料
+'''
 import pandas as pd
 
 
